@@ -1,0 +1,18 @@
+.msg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: var(--cor-de-fundo);
+}
+
+.msg h2 {
+    color: var(--cor-do-texto);
+    width: 30rem;
+}
+
+.msg img {
+    width: 15rem;
+    margin-right: 1rem;
+}
