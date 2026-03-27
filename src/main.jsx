@@ -10,6 +10,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/home/Home'
 import Login from './pages/login/Login'
 import Cadastro from './pages/cadastro/Cadastro'
+import Dashboard from './pages/dashboard/Dashboard'
+import Dashboard2 from './pages/dash2/Dash2'
 import './main.css'
 
 
@@ -27,8 +29,15 @@ const router = createBrowserRouter([
   {
     path: "cadastro",
     element: <Cadastro />,
+  },
+  {
+    path: "/login/dashboard",
+    element: <Dashboard />,
+  },
+  {
+    path: "/login/dash2",
+    element: <Dashboard2 />,
   }
-
 ])
 
 

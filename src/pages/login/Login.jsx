@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Login.css"
+import { NavLink } from "react-router-dom";
 const Login = () => {
     return (
         <div className="login-container">
@@ -46,10 +47,12 @@ const Login = () => {
                                     <a href="/recuperar-senha">Esqueceu sua senha?</a>
                                 </div>
                             </div>
+                            <NavLink to="dashboard" end>
+                                <button type="submit" className="btn-entrar">
+                                    Entrar
+                                </button>
+                            </NavLink>
 
-                            <button type="submit" className="btn-entrar">
-                                Entrar
-                            </button>
                         </form>
 
                         <p className="cadastro-link">

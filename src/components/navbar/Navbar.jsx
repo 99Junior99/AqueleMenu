@@ -10,7 +10,7 @@ const Navbar = () => {
                     <button>asas</button>
                 </NavLink>
 
-                <button>Sobre</button>
+                <NavLink> <button>Sobre</button></NavLink>
                 <NavLink to="login"><button>Entrar</button></NavLink>
                 <NavLink to="cadastro"><button>Registro</button></NavLink>
             </nav>

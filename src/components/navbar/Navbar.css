@@ -30,11 +30,22 @@ button {
     border-radius: .5rem;
     cursor: pointer;
     font-weight: 600;
+
+
+}
+
+a:hover button {
+    color: var(--cor-de-fundo);
+}
+
+a {
+    padding: 0rem .5rem 0rem .5rem;
+    text-decoration: none;
+    border-radius: .5rem;
     color: var(--cor-do-texto);
 }
 
-button:hover {
+a:hover {
     background-color: var(--cor-quartenária);
-    color: var(--cor-de-fundo);
 
 }
