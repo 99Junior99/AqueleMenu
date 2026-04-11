@@ -6,7 +6,7 @@
     position: fixed;
     backdrop-filter: blur(10px);
 
-    border-bottom: 2px solid var(--cor-do-texto);
+    border-bottom: 2px solid var(--cor-terciária);
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -24,6 +24,7 @@
 
 button {
     text-transform: capitalize;
+    color: var(--cor-do-texto);
     background: none;
     padding: 1rem;
     border: none;

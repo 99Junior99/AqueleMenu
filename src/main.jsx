@@ -4,8 +4,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-
-
 // Importando as páginas
 import Home from './pages/home/Home'
 import Login from './pages/login/Login'
@@ -13,6 +11,7 @@ import Cadastro from './pages/cadastro/Cadastro'
 import Dashboard from './pages/dashboard/Dashboard'
 import Dashboard2 from './pages/dash2/Dash2'
 import './main.css'
+
 
 
 // As rotas
