@@ -5,8 +5,8 @@
     left: 0;
     position: fixed;
     backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 10px var(--cor-quartenária);
 
-    border-bottom: 2px solid var(--cor-terciária);
     width: 100vw;
     display: flex;
     justify-content: center;

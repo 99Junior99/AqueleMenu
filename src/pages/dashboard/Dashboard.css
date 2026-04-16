@@ -1,6 +1,46 @@
 .dashboard {
     display: flex;
+    flex-direction: row;
+
+
+}
+
+.content {
+    display: flex;
+
     flex-direction: column;
+}
+
+.content h2 {
+    margin: 1rem;
+    color: var(--cor-do-texto);
+}
+
+.btns {
+    position: relative;
+    flex-wrap: wrap;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 1rem;
 
 
+}
+
+.cad {
+    width: 15rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--cor-terciária);
+    color: var(--cor-de-fundo);
+    transition: ease 0.2s;
+}
+
+.cad:hover {
+    transform: scale(1.1);
 }
