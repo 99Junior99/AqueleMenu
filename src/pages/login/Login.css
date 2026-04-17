@@ -29,13 +29,14 @@
     right: 4rem;
     text-decoration: none;
     color: var(--cor-do-texto);
+    background: none;
     font-weight: 700;
     font-size: 1rem;
-    transition: opacity 0.2s, transform 0.2s;
+    transition: transform 0.2s;
 }
 
 .voltar-link:hover {
-
+    background-color: none;
     color: var(--cor-terciária);
     transform: translateX(-4px);
 }
@@ -95,7 +96,7 @@
 .input-with-icon input {
     width: 100%;
     padding: 16px 16px 16px 50px;
-    border: 1.5px solid var(--cor-do-texto);
+    border: 1.5px solid var(--cor-terciária);
     border-radius: 12px;
     background-color: var(--cor-de-fundo);
     font-size: 1rem;
@@ -105,7 +106,7 @@
 }
 
 .input-with-icon input:focus {
-    border-color: var(--cor-do-texto);
+    border-color: var(--cor-terciária);
     background-color: var(--cor-de-fundo);
 
 }
@@ -125,6 +126,7 @@
     color: var(--cor-quartenária);
     text-decoration: none;
     font-weight: 600;
+    background: none;
 }
 
 .esqueceu-senha a:hover {
@@ -141,16 +143,13 @@
     font-size: 1.1rem;
     font-weight: 800;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
+    transition: ease 0.2s;
 }
 
 .btn-entrar:hover {
+
     background-color: var(--cor-terciária);
 
-}
-
-.btn-entrar:active {
-    transform: scale(0.98);
 }
 
 .cadastro-link {
@@ -168,6 +167,7 @@
 
 .cadastro-link a:hover {
     text-decoration: underline;
+    background: none;
 }
 
 /* Seção Direita (Preta/Destaque) */
