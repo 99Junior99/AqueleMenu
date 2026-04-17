@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from '../../components/sidebar/Sidebar'
 
-const Dash2 = () => {
+const Serviços = () => {
     return (
         <div>
             <Sidebar />
@@ -9,4 +9,4 @@ const Dash2 = () => {
     )
 }
 
-export default Dash2
+export default Serviços

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cadastro.css';
+import { NavLink } from 'react-router-dom';
 
 const Cadastro = () => {
   return (
@@ -54,10 +55,12 @@ const Cadastro = () => {
                   <input type="password" placeholder="••••••••" />
                 </div>
               </div>
+              <NavLink to="/dashboard" end>
+                <button type="submit" className="btn-criar">
+                  Criar conta
+                </button>
+              </NavLink>
 
-              <button type="submit" className="btn-criar">
-                Criar conta
-              </button>
             </form>
 
             <p className="login-link">

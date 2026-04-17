@@ -47,7 +47,7 @@ const Login = () => {
                                     <a href="/recuperar-senha">Esqueceu sua senha?</a>
                                 </div>
                             </div>
-                            <NavLink to="dashboard" end>
+                            <NavLink to="/dashboard" end>
                                 <button type="submit" className="btn-entrar">
                                     Entrar
                                 </button>

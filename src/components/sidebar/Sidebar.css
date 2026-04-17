@@ -5,12 +5,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     width: 5vw;
     height: 100vh;
     position: sticky;
     padding: 1rem;
     transition: .2s ease;
     background-color: var(--cor-principal);
+}
+
+.aside ul {
+    margin-right: 2rem;
 }
 
 .aside h2 {
@@ -20,7 +25,7 @@
     justify-self: center;
     margin: 0;
     padding: 0;
-    right: 2vw;
+
     color: var(--cor-terciária);
 
 }
@@ -38,7 +43,7 @@
     margin: 3rem;
     align-items: center;
 
-
+    transition: ease .2s;
 
 }
 
@@ -57,11 +62,13 @@
 }
 
 .aside:hover a {
-    margin: 1rem;
-    right: 1rem;
+    margin: 1.1rem;
+
     position: relative;
     width: 10vw;
+
 }
+
 
 .aside:hover button {
     display: block;
