@@ -1,0 +1,157 @@
+.content {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.content .title {
+    margin: 1rem;
+    color: var(--cor-terciária);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns {
+    position: relative;
+    flex-wrap: wrap;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 1rem;
+
+
+}
+
+.cad {
+    width: 15rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--cor-quartenária);
+    color: var(--cor-de-fundo);
+    transition: ease 0.2s;
+    z-index: 1;
+    position: relative;
+}
+
+.cad:hover {
+    background: var(--cor-terciária);
+    transform: scale(1.1);
+}
+
+.cad .icon {
+    width: 4rem;
+    margin-left: 1rem;
+    filter: invert(1);
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.msg h2 {
+    color: var(--cor-terciária);
+}
+
+.cad-content,
+.cad-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1000;
+    background: var(--cor-de-fundo);
+    left: 35vw;
+    top: 10vh;
+    margin: 1rem;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 5px grey;
+    padding: 1rem;
+    width: 20rem;
+
+
+}
+
+.form div {
+    display: flex;
+
+    position: relative;
+    margin: 1rem;
+    width: 15rem;
+}
+
+.form input {
+    padding: .5rem;
+    border: solid 2px grey;
+    border-radius: .2rem;
+    width: 15rem;
+}
+
+.form .image {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    border: none;
+    background-color: none;
+}
+
+.form label {
+    margin-bottom: 1rem;
+}
+
+.form .img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: dashed 2px var(--cor-terciária);
+    margin-bottom: 1rem;
+    height: 8rem;
+    width: 14rem;
+
+}
+
+.form textarea {
+    max-width: 15rem;
+    width: 15rem;
+    max-height: 5rem;
+    height: 5rem;
+}
+
+.form button {
+    background-color: var(--cor-quartenária);
+    border-radius: .5rem;
+    color: var(--cor-de-fundo);
+    width: 15rem;
+    transition: .2s ease;
+}
+
+.form button:hover {
+    background-color: var(--cor-terciária);
+}
+
+.aside .i1 {
+    filter: brightness(10);
+
+}
