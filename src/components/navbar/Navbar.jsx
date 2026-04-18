@@ -1,7 +1,16 @@
-import React from 'react'
+import { React, useRef } from 'react'
 import { NavLink } from "react-router-dom";
+
+
+
 import "./Navbar.css"
 const Navbar = () => {
+    const targetRef = useRef(null);
+
+    const scrollToComponent = () => {
+        targetRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div>
             <nav class="nav">
@@ -9,7 +18,7 @@ const Navbar = () => {
 
 
                 <NavLink to='sobre'>
-                    <button className='btn'>Sobre</button>
+                    <button className='btn' onClick={scrollToComponent}>Sobre</button>
                 </NavLink>
                 <NavLink to="login">
                     <button className='btn'>Entrar</button>
