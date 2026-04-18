@@ -6,13 +6,17 @@ const Navbar = () => {
         <div>
             <nav class="nav">
                 <h2 class="log">LOGO</h2>
-                <NavLink to="/" end>
-                    <button>asas</button>
-                </NavLink>
 
-                <NavLink> <button>Sobre</button></NavLink>
-                <NavLink to="login"><button>Entrar</button></NavLink>
-                <NavLink to="cadastro"><button>Registro</button></NavLink>
+
+                <NavLink to='sobre'>
+                    <button className='btn'>Sobre</button>
+                </NavLink>
+                <NavLink to="login">
+                    <button className='btn'>Entrar</button>
+                </NavLink>
+                <NavLink to="cadastro">
+                    <button className='btn'>Registro</button>
+                </NavLink>
             </nav>
         </div>
     )

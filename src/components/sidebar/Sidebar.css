@@ -50,7 +50,7 @@
 
 }
 
-.aside button {
+.aside .bt {
     color: var(--cor-do-texto);
     display: none;
 }
@@ -76,7 +76,7 @@ a:hover .i6 {
     width: 10vw;
 }
 
-.aside:hover button {
+.aside:hover .bt {
     display: block;
 
 }
@@ -96,6 +96,6 @@ a:hover .i6 {
     fill: white;
 }
 
-.active button {
+.active .bt {
     color: var(--cor-de-fundo);
 }

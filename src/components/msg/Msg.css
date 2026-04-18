@@ -3,8 +3,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    text-align: center;
+    padding: 1rem;
     background-color: var(--cor-de-fundo);
+
 }
 
 .msg h2 {
@@ -15,4 +17,29 @@
 .msg img {
     width: 15rem;
     margin-right: 1rem;
+}
+
+.wrapper {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.slide {
+    position: relative;
+    cursor: pointer;
+
+    margin-left: 2rem;
+    transition: .2s ease;
+}
+
+.slide:hover {
+    transform: scale(1.1);
+}
+
+.slide img {
+    height: 12rem;
+    width: 20rem;
+    border-radius: .5rem;
 }
