@@ -11,6 +11,8 @@ import Pratos from './pages/pratos/Pratos'
 import Estatísticas from './pages/estatísticas/Estatísticas'
 import Serviços from './pages/serviços/Serviços'
 import Definições from './pages/definições/Definições'
+
+import Error from "./pages/Error/Error"
 import './App.css'
 
 
@@ -49,6 +51,10 @@ const router = createBrowserRouter([
     {
         path: "/definições",
         element: <Definições />,
+    },
+    {
+        path: "*",
+        element: <Error />,
     }
 
 ])

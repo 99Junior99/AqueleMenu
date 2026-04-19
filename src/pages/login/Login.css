@@ -15,6 +15,10 @@
     position: relative;
 }
 
+.login-form a {
+    background: none;
+}
+
 .logo-topo {
     position: absolute;
     top: 40px;
@@ -173,7 +177,7 @@
 /* Seção Direita (Preta/Destaque) */
 .login-direito {
     flex: 1;
-    background-color: var(--cor-terciária);
+    background-color: var(--cor-quartenária);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,7 +188,8 @@
 }
 
 .quadrado-amarelo {
-
+    flex: 1;
+    background: var(--cor-principal);
     width: 100px;
     height: 100px;
     border-radius: 25px;
@@ -203,9 +208,10 @@
 }
 
 .login-direito p {
-    color: #9ca3af;
+    color: var(--cor-de-fundo);
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.5;
+
 }
 
 input:-webkit-autofill,

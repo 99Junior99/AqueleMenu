@@ -9,12 +9,12 @@ const Login = () => {
                 {/* LADO ESQUERDO - FORMULÁRIO */}
                 <section className="login-esquerdo">
                     <div className="logo-topo">
-                        <a href="/" className="voltar-link">
+                        <NavLink to="/" className="voltar-link">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M19 12H5M12 19l-7-7 7-7" />
                             </svg>
                             <span>Voltar</span>
-                        </a>
+                        </NavLink>
                     </div>
 
                     <div className="form-wrapper">
@@ -56,7 +56,7 @@ const Login = () => {
                         </form>
 
                         <p className="cadastro-link">
-                            Ainda não tem uma conta? <a href="/cadastro">Crie uma aqui</a>
+                            Ainda não tem uma conta? <NavLink to="/cadastro">Crie uma aqui</NavLink>
                         </p>
                     </div>
                 </section>
@@ -65,10 +65,8 @@ const Login = () => {
                 <section className="login-direito">
                     <div className="destaque-conteudo">
                         <div className="quadrado-amarelo">🚀</div>
-                        <h2>Pronto para vender?</h2>
-                        <p>
-                            Configure o seu cardápio, adicione e remova seus pratos da forma que quiser tudo isso em um unico lugar.
-                        </p>
+                        <h2>Pronto para faturar?</h2>
+                        <p>Entre no seu perfil e dê início as suas vendas.</p>
                     </div>
                 </section>
 

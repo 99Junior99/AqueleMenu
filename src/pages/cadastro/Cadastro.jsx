@@ -10,12 +10,12 @@ const Cadastro = () => {
         {/* LADO ESQUERDO - FORMULÁRIO */}
         <section className="cadastro-esquerdo">
           <div className="logo-topo">
-            <a href="/" className="voltar-link">
+            <NavLink to="/" className="voltar-link">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M19 12H5M12 19l-7-7 7-7" />
               </svg>
               <span>Voltar</span>
-            </a>
+            </NavLink>
           </div>
 
           <div className="form-wrapper">
@@ -64,7 +64,7 @@ const Cadastro = () => {
             </form>
 
             <p className="login-link">
-              Já tem uma conta? <a href="/login">Faça login</a>
+              Já tem uma conta? <NavLink to="/login">Faça login</NavLink>
             </p>
           </div>
         </section>
@@ -73,10 +73,9 @@ const Cadastro = () => {
         <section className="cadastro-direito">
           <div className="destaque-conteudo">
             <div className="quadrado-amarelo">🏪</div>
-            <h2>Catálogo profissional</h2>
+            <h2>Crie o seu cardápio profissional!</h2>
             <p>
-              Milhares de lojistas já usam o Cataloguei para <br />
-              vender mais pelo WhatsApp.
+              Tenha controle total do seu cardápio: adicione, edite ou remova pratos quando quiser, tudo em um só lugar.
             </p>
           </div>
         </section>

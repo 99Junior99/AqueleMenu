@@ -17,9 +17,9 @@ const Navbar = () => {
                 <h2 class="log">LOGO</h2>
 
 
-                <NavLink to='sobre'>
+                <a href='#about' >
                     <button className='btn' onClick={scrollToComponent}>Sobre</button>
-                </NavLink>
+                </a>
                 <NavLink to="login">
                     <button className='btn'>Entrar</button>
                 </NavLink>
