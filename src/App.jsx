@@ -12,7 +12,7 @@ import Estatísticas from './pages/estatísticas/Estatísticas'
 import Serviços from './pages/serviços/Serviços'
 import Definições from './pages/definições/Definições'
 
-import Error from "./pages/Error/Error"
+import Error from "./pages/error/Error"
 import './App.css'
 
 

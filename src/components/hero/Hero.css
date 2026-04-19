@@ -3,35 +3,169 @@
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    height: 50vw;
+    max-width: 100%;
     text-align: center;
     align-self: center;
     position: relative;
     gap: 1rem;
+
+
+}
+
+.card {
+    gap: 2rem;
+    height: 100vh;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    transition: ease .2s;
+    overflow: hidden;
+    cursor: grab;
+    scroll-snap-align: center;
+}
+
+.card .ball {
+    position: absolute;
+    background-color: var(--cor-terciária);
+    width: 10vw;
+    height: 20vh;
+    border-radius: 100%;
+    z-index: -1;
+    left: 34vw;
+    top: 35vh;
+}
+
+.card .circle {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+
+    border-radius: 100%;
+    border: dotted .5rem var(--cor-terciária);
+    z-index: 0;
+    left: 12vw;
+    bottom: 35vh;
+    animation: spin 10s linear infinite;
+}
+
+.cd2 .ball {
+    background: var(--cor-principal);
+}
+
+.cd2 .circle {
+    border: dotted .5rem var(--cor-secundária);
+}
+
+.cd2 {
+    width: 10vw;
+    background-color: var(--cor-do-texto);
+}
+
+.cd2 .hmsg h2 {
+    color: var(--cor-principal);
+}
+
+.cd2 .hmsg .sub {
+    color: var(--cor-secundária);
+}
+
+.cd2 .hmsg .ms {
+    color: var(--cor-principal);
 }
 
 .hero h2 {
-    font-size: 60px;
+    font-size: 4rem;
     color: var(--cor-quartenária);
 
 }
 
 .hmsg {
-    width: 25vw;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    gap: 1rem;
 }
 
 .hero .sub {
-    font-size: 55px;
+    font-size: 4rem;
+    font-weight: 700;
     color: var(--cor-terciária);
 }
 
 .hero span {
     color: var(--cor-quartenária);
-    font-size: 25px;
+    font-size: 2rem;
+    font-weight: 500;
+
 
 }
 
-.hero img {
-    width: 40rem;
+.hero .ms {
+    width: 40vw;
+}
 
+.hero img {
+    width: 30vw;
+    height: 65vh;
+    box-sizing: border-box;
+    z-index: 0;
+
+}
+
+/* Styling both navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+
+    /* Background color */
+    width: 5rem;
+    /* Box width */
+
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    padding: 1rem;
+    /* Box height */
+    height: 5rem;
+    /* Arrow color */
+    --swiper-navigation-color: var(--cor-terciária);
+
+}
+
+/* Inactive Bullets */
+.swiper-pagination-bullet {
+    --swiper-pagination-bullet-horizontal-gap: .5rem;
+    padding: .2rem;
+    background: #ccc;
+    opacity: 1;
+    /* Default is often 0.2 */
+    bottom: 10vh;
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    transition: .2s ease;
+
+}
+
+/* Active Bullet */
+.swiper-pagination-bullet-active {
+    background: var(--cor-terciária) !important;
+    /* Forces color change */
+    transform: scale(1.2);
+    /* Optional: make the active one wider */
+    border-radius: 5px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
